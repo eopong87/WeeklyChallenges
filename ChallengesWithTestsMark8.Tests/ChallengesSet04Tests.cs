@@ -220,7 +220,7 @@ namespace ChallengesWithTestsMark8.Tests
             ChallengesSet04 challenger = new ChallengesSet04();
 
             // Act
-            int actual = challenger.Factorial(number);
+            int actual = ChallengesSet04.Factorial(number);
 
             // Assert
             Assert.Equal(expected, actual);
@@ -236,9 +236,9 @@ namespace ChallengesWithTestsMark8.Tests
             int negative3 = -3;
 
             // Act
-            Action actual1 = () => challenger.Factorial(negative1);
-            Action actual2 = () => challenger.Factorial(negative2);
-            Action actual3 = () => challenger.Factorial(negative3);
+            Action actual1 = () => ChallengesSet04.Factorial(negative1);
+            Action actual2 = () => ChallengesSet04.Factorial(negative2);
+            Action actual3 = () => ChallengesSet04.Factorial(negative3);
 
             // Assert
             Assert.Throws<ArgumentOutOfRangeException>(actual1);
